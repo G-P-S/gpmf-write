@@ -6,8 +6,8 @@ set(CMAKE_CONFIGURATION_TYPES "Debug;Release")
 
 file(GLOB HEADERS "*.h")
 file(GLOB DEMO_HEADERS "demo/*.h")
-file(GLOB LIB_SOURCES "*.c" "demo/GPMF_mp4writer.c" "demo/GPMF_parser.c")
-file(GLOB SOURCES ${LIB_SOURCES} "demo/GPMF_demo.c" "demo/GPMF_print.c")
+file(GLOB LIB_SOURCES "*.c" "demo/GPMF_mp4writer.c")
+file(GLOB SOURCES ${LIB_SOURCES} "demo/GPMF_demo.c" "demo/GPMF_print.c" "demo/GPMF_parser.c")
 
 add_executable(GPMF_WRITER_BIN ${SOURCES} ${HEADERS})
 set_target_properties(GPMF_WRITER_BIN PROPERTIES OUTPUT_NAME "${PROJECT_NAME}")
